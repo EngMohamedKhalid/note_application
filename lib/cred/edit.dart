@@ -204,11 +204,11 @@ class _EditNoteState extends State<EditNote> {
                 Padding(
                 padding: const EdgeInsets.only(left: 15 , right: 15),
                 child: TextFormField(
+                  maxLength: 100000,
                  initialValue: widget.list['note'], 
                   onSaved: (val){
                   note = val;
                  },
-                  maxLength: 800,
                   minLines: 1,
                   maxLines: 4,
                   decoration: InputDecoration(
